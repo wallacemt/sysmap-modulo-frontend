@@ -1,0 +1,20 @@
+h1{
+    color: red;
+    background-color: black;
+    width: fit-content;
+    font-size: 2em;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+h2{
+    font-size: 1em;
+    font-weight: 400;
+}
+
+div{
+    margin: 10px;
+}
+div button{
+    margin: 10px;
+}
