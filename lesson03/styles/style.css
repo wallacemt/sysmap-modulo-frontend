@@ -1,0 +1,31 @@
+.grid {
+  display: grid;
+  max-width: 500px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  /* grid-template-areas: 'box2 box1' 'box3 box4'; */
+  gap: 15px;
+}
+.box1,
+.box2,
+.box3,
+.box4 {
+  padding: 40px;
+}
+
+.box1 {
+  background-color: red;
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.box2 {
+  background-color: #0080009d;
+}
+
+.box3 {
+  background-color: blue;
+}
+
+.box4 {
+  background-color: yellow;
+}
