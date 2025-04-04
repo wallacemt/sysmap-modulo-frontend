@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+:root {
+  --font: "Inter", sans-serif;
+
+  --primary-color: hsl(210, 100%, 50%);
+  --primary-hover-color: hsl(210, 100%, 44%);
+  --foreground-color: hsl(0, 0%, 100%);
+  --border: hsl(0, 0%, 47%);
+}
+
+body {
+  font-family: var(--font);
+}
+
+.done span {
+  text-decoration: line-through;
+}
+
+button {
+  border: 0;
+}
+
+.container {
+  max-width: 32rem;
+  padding-inline: 1.25rem;
+  margin-inline: auto;
+}
+
+.btn {
+  border-radius: 0.25rem;
+  background-color: var(--primary-color);
+  color: var(--foreground-color);
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--primary-hover-color);
+}
+
+header {
+  padding-block: 1.5rem;
+}
+
+header h1 {
+  --font: "Boldonse", sans-serif;
+
+  font-size: 1.25rem;
+  font-family: var(--font);
+}
+
+.create-task-form {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.125rem;
+}
+
+.create-task-input {
+  flex: 1;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.create-task-input label {
+  font-weight: 500;
+}
+
+.create-task-input input {
+  height: 2rem;
+  padding-inline: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 0.25rem;
+}
+
+.create-task-form button {
+  height: 2rem;
+  padding-inline: 0.75rem;
+}
+
+.tasks {
+  margin-top: 1rem;
+}
+
+.tasks ul {
+  list-style: none;
+}
+
+.tasks ul li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.tasks ul li + li {
+  padding-top: 1.25rem;
+  margin-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.tasks ul li span {
+  align-self: center;
+}
+
+.tasks ul li button {
+  padding: 0.25rem 0.5rem;
+  align-self: flex-start;
+}
+
+@media (max-width: 480px) {
+  .tasks ul li {
+    flex-direction: column;
+  }
+
+  .tasks ul li span {
+    align-self: flex-start;
+  }
+
+  .tasks ul li button {
+    align-self: flex-end;
+  }
+}
