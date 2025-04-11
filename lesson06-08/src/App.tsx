@@ -1,16 +1,20 @@
 
-import Mensagem from ".//components/Mensagem";
-import "./App.css";
-import Contador from "./components/Contador";
-import FruitList from "./components/FruitList";
+// import Mensagem from ".//components/Mensagem";
+// import FruitList from "./components/FruitList";
 
+import "./App.css";
+// import Contador from "./components/Contador";
+import ContadorHook from "./components/ContadorHook";
+import Usuario from "./components/Usuario";
 function App() {
 
   return (
     <>
-      <Mensagem user="Wallace" messagem="Mensagem 1" />
+      {/* <Mensagem user="Wallace" messagem="Mensagem 1" />
       <FruitList/>
-      <Contador/>
+      */}
+      <Usuario/>
+      <ContadorHook/>
     </>
   );
 }
