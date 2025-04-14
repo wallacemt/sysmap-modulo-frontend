@@ -30,3 +30,7 @@ fetch("https://jsonplaceholder.typicode.com/posts", {
 // };
 
 // getUsers();
+
+navigator.geolocation.getCurrentPosition((position) => {
+  console.log(position);
+})
